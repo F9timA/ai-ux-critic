@@ -1,0 +1,13 @@
+WCAG contrast guidelines for accessibility:
+
+Normal text (under 18pt, or under 14pt bold) must have a contrast ratio of at least 4.5:1 against its background to meet WCAG AA.
+
+Large text (18pt and above, or 14pt bold and above) must have a contrast ratio of at least 3:1 against its background.
+
+UI components and graphical objects (like icon buttons, form field borders) must have a contrast ratio of at least 3:1 against adjacent colors.
+
+Low-contrast text is one of the most common accessibility failures, especially light gray text on white backgrounds, or pastel text on light backgrounds.
+
+Color should never be the only way to convey information (e.g. red text alone to indicate an error) since colorblind users may not perceive the difference.
+
+Interactive elements need a visible focus state for keyboard navigation, not just a hover state.

@@ -1,0 +1,32 @@
+{
+  "issues": [
+    {
+      "heuristic_violated": "WCAG non-text contrast",
+      "explanation": "The light border surrounding the search input field lacks sufficient visual contrast against the background, making the primary input boundary difficult to distinguish.",
+      "severity": "high",
+      "location_in_image": "search craigslist input box border",
+      "suggested_fix": "Darken the border color of the search input box to achieve at least a 3:1 contrast ratio against the white background."
+    },
+    {
+      "heuristic_violated": "Visual hierarchy",
+      "explanation": "Multiple competing elements for posting an ad exist simultaneously in the top header and left sidebar with conflicting visual styles, obscuring the primary user action path.",
+      "severity": "high",
+      "location_in_image": "post an ad button on left sidebar",
+      "suggested_fix": "Consolidate the post action into one clear, visually dominant call-to-action button in the main top header."
+    },
+    {
+      "heuristic_violated": "Spacing and alignment",
+      "explanation": "The four-column link grid inside the discussion forums box has overly tight column spacing, causing adjacent topic names to run together and impair legibility.",
+      "severity": "medium",
+      "location_in_image": "discussion forums category grid",
+      "suggested_fix": "Increase horizontal padding between the forum grid columns and add vertical line spacing between links."
+    },
+    {
+      "heuristic_violated": "WCAG text contrast",
+      "explanation": "The calendar day header labels use faint text on a light gray fill, making the column headers hard to read for users with visual impairments.",
+      "severity": "low",
+      "location_in_image": "event calendar day headers",
+      "suggested_fix": "Increase the contrast ratio of the day header text against the gray background fill to at least 4.5:1."
+    }
+  ]
+}

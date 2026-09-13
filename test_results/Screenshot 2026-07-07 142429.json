@@ -1,0 +1,32 @@
+{
+  "issues": [
+    {
+      "heuristic_violated": "WCAG text contrast",
+      "explanation": "The white text on the main gold call-to-action button lacks sufficient contrast against the amber fill, making the label difficult to read.",
+      "severity": "high",
+      "location_in_image": "Primary 'Get in Touch' button in the hero section",
+      "suggested_fix": "Change the button text color to a dark navy blue (#0A192F) or darken the gold background to achieve at least a 4.5:1 contrast ratio."
+    },
+    {
+      "heuristic_violated": "WCAG text contrast",
+      "explanation": "The light gray body copy beneath the main tagline has insufficient contrast against the clean white background.",
+      "severity": "medium",
+      "location_in_image": "Hero body paragraph",
+      "suggested_fix": "Darken the paragraph text color to a slate or navy tone that meets WCAG AA standards (4.5:1 minimum ratio)."
+    },
+    {
+      "heuristic_violated": "Visual hierarchy",
+      "explanation": "The top navigation bar contains a prominent gold button identical in styling and text to the primary hero button, creating redundant competing focal points.",
+      "severity": "medium",
+      "location_in_image": "'Get in Touch' button in the header navigation",
+      "suggested_fix": "Style the header CTA as a secondary ghost button or text link so the main hero CTA stands out as the primary action."
+    },
+    {
+      "heuristic_violated": "WCAG text contrast",
+      "explanation": "Dark text is overlaid directly on top of the dark blue wave graphic at the bottom left corner, rendering it unreadable.",
+      "severity": "low",
+      "location_in_image": "'About section' text at the bottom left corner",
+      "suggested_fix": "Set the text color to white or move the text off the dark graphic to ensure clear readability."
+    }
+  ]
+}

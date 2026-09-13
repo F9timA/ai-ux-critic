@@ -1,0 +1,32 @@
+{
+  "issues": [
+    {
+      "heuristic_violated": "WCAG non-text contrast",
+      "explanation": "The black color of the music note's lower section lacks sufficient contrast against the dark blue background, causing key parts of the primary logo to blend into the screen.",
+      "severity": "high",
+      "location_in_image": "Black music note graphic",
+      "suggested_fix": "Add a light stroke outline around the music note or change its color to a high-contrast hue like white so it stands out distinctly against the blue gradient."
+    },
+    {
+      "heuristic_violated": "WCAG text contrast",
+      "explanation": "The orange color of the letter 'X' significantly lowers text contrast against the dark blue backdrop compared to the adjacent white letters, making the primary title harder to read.",
+      "severity": "high",
+      "location_in_image": "Letter 'X' in the title 'N E X T'",
+      "suggested_fix": "Change the letter 'X' to solid white to match 'N', 'E', and 'T' for uniform contrast and improved title legibility."
+    },
+    {
+      "heuristic_violated": "Visibility and feedback for user input",
+      "explanation": "The stylized, thin cursive font used for the 'music player' subtitle degrades letter legibility and makes secondary descriptive text difficult to quickly parse.",
+      "severity": "medium",
+      "location_in_image": "'music player' cursive subtitle text",
+      "suggested_fix": "Replace the cursive typeface with a clean, sans-serif or simple serif font with adequate weight for clear readability."
+    },
+    {
+      "heuristic_violated": "Spacing and alignment",
+      "explanation": "The decorative yellow horizontal lines flanking the title are unevenly spaced relative to the letters and introduce visual noise around the main text.",
+      "severity": "low",
+      "location_in_image": "Yellow horizontal bars beside 'N E X T'",
+      "suggested_fix": "Ensure equal spacing between the text and horizontal bars on both sides, or remove the bars entirely to maintain a clean layout."
+    }
+  ]
+}

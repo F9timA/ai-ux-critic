@@ -1,0 +1,9 @@
+Spacing and alignment: Related elements should be grouped with consistent spacing (proximity principle). Inconsistent spacing between similar elements signals a lack of visual hierarchy.
+
+Touch targets: Interactive elements like buttons should be at least 44x44 pixels to be comfortably tappable on mobile.
+
+Visual hierarchy: The most important action on a screen should be the most visually prominent (size, color, position). Competing calls-to-action confuse users about what to do next.
+
+Form design: Labels should be clearly associated with their input fields. Placeholder text alone is not a substitute for a visible label, since it disappears once the user starts typing.
+
+Loading and empty states: Screens should communicate what's happening during loading, and provide clear guidance when there's no content yet, rather than showing a blank screen.

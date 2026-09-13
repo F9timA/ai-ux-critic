@@ -1,0 +1,32 @@
+{
+  "issues": [
+    {
+      "heuristic_violated": "WCAG text contrast",
+      "explanation": "The dark blue text of the 'Templates' item in the main navigation bar fails contrast requirements against the black background, making primary navigation hard to read.",
+      "severity": "high",
+      "location_in_image": "'Templates' link in top navigation bar",
+      "suggested_fix": "Change the text color to white (#FFFFFF) or a bright highlight blue to ensure at least a 4.5:1 contrast ratio against the black background."
+    },
+    {
+      "heuristic_violated": "WCAG text contrast",
+      "explanation": "The dark blue button text on the 'Use Templates' buttons inside each card lacks sufficient visual contrast against the vibrant blue button fill, impairing readability of card action labels.",
+      "severity": "medium",
+      "location_in_image": "'Use Templates' button in card components",
+      "suggested_fix": "Set the text color to crisp white (#FFFFFF) on top of the blue button to satisfy contrast guidelines."
+    },
+    {
+      "heuristic_violated": "Visual hierarchy",
+      "explanation": "The bottom CTA area displays two competing button styles with a dark 'Generate Free Diaram' button alongside a outlined blue 'View Templates' button on a bright blue background, creating confusion about the primary task.",
+      "severity": "high",
+      "location_in_image": "Bottom banner action buttons ('Generate Free Diaram' and 'View Templates')",
+      "suggested_fix": "Establish a clear visual priority by styling the main action button in high-contrast solid white with dark text, while styling the secondary button as a clear subtle outline or link style."
+    },
+    {
+      "heuristic_violated": "WCAG text contrast",
+      "explanation": "The low-contrast dim gray description text inside each card container is difficult to read against the dark gray card surface.",
+      "severity": "medium",
+      "location_in_image": "Card description text ('Complete auth flow with')",
+      "suggested_fix": "Increase the lightness of the description text to a light gray (#D0D0D0 or lighter) to achieve a contrast ratio of at least 4.5:1."
+    }
+  ]
+}

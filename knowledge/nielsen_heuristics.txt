@@ -1,0 +1,19 @@
+Visibility of system status: The system should always keep users informed about what is going on, through appropriate feedback within reasonable time.
+
+User control and freedom: Users often perform actions by mistake. They need a clearly marked "emergency exit" to leave the unwanted action without having to go through an extended process.
+
+Consistency and standards: Users should not have to wonder whether different words, situations, or actions mean the same thing. Follow platform and industry conventions.
+
+Error prevention: Good error messages are important, but the best designs carefully prevent problems from occurring in the first place.
+
+Recognition rather than recall: Minimize the user's memory load by making elements, actions, and options visible. The user should not have to remember information from one part of the interface to another.
+
+Aesthetic and minimalist design: Interfaces should not contain irrelevant or rarely needed information. Every extra unit of information competes with the relevant units and diminishes their relative visibility.
+
+Flexibility and efficiency of use: Shortcuts, hidden from novice users, may speed up interaction for expert users so the system can cater to both inexperienced and experienced users.
+
+Help users recognize, diagnose, and recover from errors: Error messages should be expressed in plain language, precisely indicate the problem, and constructively suggest a solution.
+
+Visibility and feedback for user input: Interactive elements like buttons and links should be clearly distinguishable from static content like headings and labels.
+
+Match between system and the real world: The system should speak the users' language, with words, phrases, and concepts familiar to the user, rather than system-oriented terms.

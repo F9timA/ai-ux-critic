@@ -1,0 +1,32 @@
+{
+  "issues": [
+    {
+      "heuristic_violated": "Nielsen: Aesthetic and minimalist design",
+      "explanation": "The decorative blue circle overlays directly on top of the hero headline text, making several words difficult to read.",
+      "severity": "high",
+      "location_in_image": "Hero headline text \"Create Professional and Neat Diagrams in Minutes\"",
+      "suggested_fix": "Move or resize the blue circle background element so it stays behind or beside the text without obstructing readability."
+    },
+    {
+      "heuristic_violated": "Visual hierarchy",
+      "explanation": "Two identical primary buttons labeled \"Generate Free Diagrams\" compete for attention in the header and hero area at the same time.",
+      "severity": "high",
+      "location_in_image": "Top-right navigation bar button \"Generate Free Diagrams\"",
+      "suggested_fix": "Style the header button as a simple text link or secondary button so the hero section's primary call-to-action remains the key focus."
+    },
+    {
+      "heuristic_violated": "WCAG text contrast",
+      "explanation": "The dark grey-blue text inside the pill container fails minimum contrast requirements against the dark background, reducing legibility.",
+      "severity": "low",
+      "location_in_image": "\"Trusted by technical teams globally\" badge",
+      "suggested_fix": "Increase the text color brightness to white or light gray to achieve at least a 4.5:1 contrast ratio against the dark background."
+    },
+    {
+      "heuristic_violated": "Nielsen: Aesthetic and minimalist design",
+      "explanation": "The looping dashed arrow line crosses through the hero section and creates redundant visual clutter around the primary button.",
+      "severity": "low",
+      "location_in_image": "Dashed white arrow graphic pointing to hero button",
+      "suggested_fix": "Remove the dashed arrow graphic to streamline the hero section layout and reduce visual distractions."
+    }
+  ]
+}

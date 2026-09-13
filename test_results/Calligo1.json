@@ -1,0 +1,32 @@
+{
+  "issues": [
+    {
+      "heuristic_violated": "WCAG text contrast",
+      "explanation": "The light gray navigation labels lack sufficient color contrast against the off-white header background, rendering main menu items hard to read.",
+      "severity": "high",
+      "location_in_image": "Top navigation links (SHOP, COLLECTIONS, ABOUT, CONTACT)",
+      "suggested_fix": "Darken the navigation text color to a deeper shade of brown or dark gray to achieve at least a 4.5:1 contrast ratio."
+    },
+    {
+      "heuristic_violated": "WCAG text contrast",
+      "explanation": "The light gray body paragraph text fails the 4.5:1 accessibility contrast threshold against the light background, causing legibility issues for secondary descriptive content.",
+      "severity": "medium",
+      "location_in_image": "Body description text below the main headline",
+      "suggested_fix": "Increase text darkness to a dark charcoal or dark brown color to ensure readable contrast against the background."
+    },
+    {
+      "heuristic_violated": "WCAG text contrast",
+      "explanation": "The pastel orange eyebrow text on the light cream background does not meet minimum contrast standards, impairing the readability of the category tag.",
+      "severity": "low",
+      "location_in_image": "Eyebrow text 'ORIGINAL WORKS, HAND-PAINTED'",
+      "suggested_fix": "Use a darker amber or warm brown shade for the eyebrow text to meet the 4.5:1 contrast requirement."
+    },
+    {
+      "heuristic_violated": "WCAG text contrast",
+      "explanation": "The white digit inside the small orange shopping cart badge has poor contrast against the light orange badge fill, making the item count difficult to see.",
+      "severity": "low",
+      "location_in_image": "Cart badge digit '0' in the top right header",
+      "suggested_fix": "Darken the badge background color or change the text color inside the badge to a dark color to improve contrast."
+    }
+  ]
+}

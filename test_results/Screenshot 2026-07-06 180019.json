@@ -1,0 +1,32 @@
+{
+  "issues": [
+    {
+      "heuristic_violated": "Visual hierarchy",
+      "explanation": "The top header button and the central hero button both use identical high-visibility gold styling, creating competing primary actions that confuse user flow.",
+      "severity": "high",
+      "location_in_image": "Top-right header 'Get a Quote' button and central 'Start Your Project' button",
+      "suggested_fix": "Change the top-right 'Get a Quote' button to a ghost/outlined button style so 'Start Your Project' remains the single dominant primary call to action."
+    },
+    {
+      "heuristic_violated": "WCAG text contrast",
+      "explanation": "The thin serif typeface and low brightness of the top-left logo render it faint and hard to read against the dark kitchen background image.",
+      "severity": "high",
+      "location_in_image": "Top-left 'rehome' logo text",
+      "suggested_fix": "Increase font weight and adjust color brightness for the 'rehome' logo to meet a minimum 4.5:1 text contrast ratio."
+    },
+    {
+      "heuristic_violated": "WCAG text contrast",
+      "explanation": "The light gray, thin-weight paragraph text lacks sufficient visual contrast against the dark background image, impairing readability.",
+      "severity": "medium",
+      "location_in_image": "Hero body paragraph under the main headline",
+      "suggested_fix": "Increase the opacity and thickness of the text or apply a darker overlay gradient behind the hero content section."
+    },
+    {
+      "heuristic_violated": "Nielsen: Consistency and standards",
+      "explanation": "The navigation menu displays 'CARRIERS' instead of the conventional 'CAREERS' label, violating standard web navigation conventions and causing user confusion.",
+      "severity": "high",
+      "location_in_image": "Header navigation item 'CARRIERS'",
+      "suggested_fix": "Update the navigation menu label text from 'CARRIERS' to 'CAREERS'."
+    }
+  ]
+}
