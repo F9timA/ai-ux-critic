@@ -96,7 +96,7 @@ def analyze_screenshot(image_path):
     )
 
     last_error = None
-    for attempt in range(3):
+    for attempt in range(4):
         try:
             response = client.models.generate_content(
                 model="gemini-3.6-flash",
@@ -109,8 +109,9 @@ def analyze_screenshot(image_path):
             return json.loads(response.text)
         except Exception as e:
             last_error = e
-            print(f"Attempt {attempt + 1} failed: {e}")
-            time.sleep(2)
+            wait_time = 3 * (attempt + 1)  # 3s, 6s, 9s, 12s
+            print(f"Attempt {attempt + 1} failed: {e}. Retrying in {wait_time}s...")
+            time.sleep(wait_time)
 
     raise last_error
 

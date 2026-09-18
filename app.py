@@ -55,7 +55,10 @@ if uploaded_file is not None:
             try:
                 result = analyze_screenshot(tmp_path)
             except Exception as e:
-                st.error(f"Debug info: {str(e)}")
+                st.error(
+                    "⚠️ The AI model is temporarily busy handling high demand. "
+                    "This usually resolves within a minute — please try again shortly."
+                )
                 st.stop()
             finally:
                 os.remove(tmp_path)
