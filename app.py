@@ -54,6 +54,13 @@ if uploaded_file is not None:
 
             try:
                 result = analyze_screenshot(tmp_path)
+            except Exception as e:
+                st.error(
+                    "Something went wrong while analyzing this image. "
+                    "This can happen if the service is briefly overloaded — "
+                    "please wait a few seconds and try again."
+                )
+                st.stop()
             finally:
                 os.remove(tmp_path)
 

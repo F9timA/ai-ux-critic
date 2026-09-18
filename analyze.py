@@ -5,6 +5,7 @@ from PIL import Image
 import chromadb
 import os
 import json
+import time
 
 load_dotenv()
 client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
@@ -94,16 +95,24 @@ def analyze_screenshot(image_path):
         "For each issue, also suggest a concrete fix."
     )
 
-    response = client.models.generate_content(
-        model="gemini-3.6-flash",
-        contents=[prompt, image],
-        config=types.GenerateContentConfig(
-            response_mime_type="application/json",
-            response_schema=response_schema
-        )
-    )
+    last_error = None
+    for attempt in range(3):
+        try:
+            response = client.models.generate_content(
+                model="gemini-3.6-flash",
+                contents=[prompt, image],
+                config=types.GenerateContentConfig(
+                    response_mime_type="application/json",
+                    response_schema=response_schema
+                )
+            )
+            return json.loads(response.text)
+        except Exception as e:
+            last_error = e
+            print(f"Attempt {attempt + 1} failed: {e}")
+            time.sleep(2)
 
-    return json.loads(response.text)
+    raise last_error
 
 
 if __name__ == "__main__":
